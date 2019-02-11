@@ -1,0 +1,15 @@
+{
+  "name": "page_load_time_chrome_extention",
+  "version": "1.0.0",
+  "description": "Chrome extention that displays the current internet speed and the size of a website",
+  "main": "index.js",
+  "repository": "https://github.com/y-yeah/page_load_time_chrome_extention.git",
+  "author": "Yuma Sumi <rbly.776324.yuma66krayt@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  }
+}
