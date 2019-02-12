@@ -1,7 +1,7 @@
 {
   "name": "Chroman",
   "version": "1.0",
-  "description": "Chrome Extention that calculates the loading time of a website",
+  "description": "Chroman will display the URL, the network type, the approximate total size, the connection speed, and the loading time, of the current webpage. And it will give you advices based on those information. Make sure you turn on the sound! Currently you can use this extension only when URL of the current website starts with http or https.",
   "permissions": [
     "storage",
     "declarativeContent",
@@ -22,12 +22,5 @@
       "48": "./img/icon48.png",
       "128": "./img/icon128.png"
     }
-  },
-  "content_scripts": [
-    {
-      "matches": ["https://*/"],
-      "js": ["contentScript.js"]
-    }
-  ],
-  "web_accessible_resources": ["contentScript.js"]
+  }
 }
