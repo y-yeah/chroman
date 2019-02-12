@@ -36,11 +36,7 @@ chrome.runtime.onInstalled.addListener(() => {
     console.log("THIS IS CHROME STORAGE ", chrome.storage);
     chrome.declarativeContent.onPageChanged.addRules([
       {
-        conditions: [
-          new chrome.declarativeContent.PageStateMatcher({
-            pageUrl: { urlMatches: ["https://*/"] }
-          })
-        ],
+        conditions: [new chrome.declarativeContent.PageStateMatcher()],
         actions: [new chrome.declarativeContent.ShowPageAction()]
       }
     ]);

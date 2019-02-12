@@ -1,0 +1,23 @@
+body {
+  min-height: 250px;
+  min-width: 500px;
+}
+#title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+div,
+p,
+button {
+  margin: 10px;
+  font-size: 15px;
+}
+button {
+  height: 45px;
+  width: 75px;
+  outline: none;
+}
+#text {
+  margin: 20px;
+}

@@ -14,6 +14,12 @@ chrome.storage.sync.get("color", data => {
 });
 
 check.onclick = async e => {
+  const calculating = document.getElementById("calculating");
+  calculating.innerText = "CALCULATING...";
+  calculating.style.color = "red";
+  calculating.style.fontSize = "20px";
+  calculating.style.fontWeight = "bold italic";
+
   chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
     const link = document.createElement("a");
     link.setAttribute("href", tabs[0].url);
@@ -36,67 +42,120 @@ check.onclick = async e => {
     const conSpeedVal = document.createElement("p");
     speed.innerText = "";
     conSpeedKey.innerText = "Connection speed when you loaded this page: ";
-    conSpeedVal.innerText = navigator.connection.downlink + "mbps";
+    conSpeedVal.innerText = navigator.connection.downlink + " Mbps";
     speed.appendChild(conSpeedKey);
     speed.appendChild(conSpeedVal);
 
     let start = Date.now();
     let end;
-    fetch(tabs[0].url).then(res => {
-      console.log(res.body);
-      end = Date.now();
-      let sec = (end - start) / 1000;
-      confirm(sec);
-      loadTimeDOM.innerText = "";
-      const loadTimeKey = document.createElement("b");
-      const loadTimeVal = document.createElement("p");
-      loadTimeKey.innerText = "Loading time: ";
-      loadTimeVal.innerText = sec.toString() + "sec(s)";
-      loadTimeDOM.appendChild(loadTimeKey);
-      loadTimeDOM.appendChild(loadTimeVal);
+    fetch(tabs[0].url)
+      .then(res => {
+        return res.body;
+      })
+      .then(body => {
+        const reader = body.getReader();
+        return reader;
+      })
+      .then(reader => {
+        return new ReadableStream({
+          start(controller) {
+            return pump();
+            function pump() {
+              return reader.read().then(({ done, value }) => {
+                if (done) {
+                  controller.close();
+                  return;
+                }
+                controller.enqueue(value);
+                return pump();
+              });
+            }
+          }
+        });
+      })
+      .then(stream => new Response(stream))
+      .then(response => response.blob())
+      .then(blob => {
+        console.log(URL.createObjectURL(blob));
+        end = Date.now();
+        let sec = (end - start) / 1000;
 
-      const sizeKey = document.createElement("b");
-      const sizeVal = document.createElement("p");
-      size.innerText = "";
-      sizeKey.innerText = "Total page size: ";
-      sizeVal.innerText =
-        (sec * Number(navigator.connection.downlink)) / 8 + "Byte(s)";
-      size.appendChild(sizeKey);
-      size.appendChild(sizeVal);
+        setTimeout(() => {
+          calculating.innerText = "";
+          loadTimeDOM.innerText = "";
+          const loadTimeKey = document.createElement("b");
+          const loadTimeVal = document.createElement("p");
+          loadTimeKey.innerText = "Loading time: ";
+          loadTimeVal.innerText = sec.toString() + " sec(s)";
+          loadTimeDOM.appendChild(loadTimeKey);
+          loadTimeDOM.appendChild(loadTimeVal);
 
-      chrome.tts.speak("Here is the result!", {
-        lang: "en-US",
-        rate: 1.5
+          const sizeKey = document.createElement("b");
+          const sizeVal = document.createElement("p");
+          size.innerText = "";
+          sizeKey.innerText = "Approximate total page size: ";
+          const byte =
+            ((sec * Number(navigator.connection.downlink)) / 8) * 1000;
+          sizeVal.innerText = byte + " Byte(s)";
+          size.appendChild(sizeKey);
+          size.appendChild(sizeVal);
+
+          if (Number(navigator.connection.downlink) <= 5) {
+            if (sec > 1) {
+              chrome.tts.speak(
+                "This webpage is heavy and your Internet is slow...",
+                {
+                  lang: "en-US",
+                  rate: 1.0
+                }
+              );
+            } else if (sec > 0.5 && sec < 1) {
+              chrome.tts.speak(
+                "This webpage is not heavy, but your Internet is slow.",
+                {
+                  lang: "en-US",
+                  rate: 1.0
+                }
+              );
+            } else {
+              chrome.tts.speak(
+                "Thank God, your Internet is slow but this webpage is super light!",
+                {
+                  lang: "en-US",
+                  rate: 1.0
+                }
+              );
+            }
+          } else {
+            if (sec > 1) {
+              chrome.tts.speak(
+                "Your Internet is fast, but this webpage is heavy.",
+                {
+                  lang: "en-US",
+                  rate: 1.0
+                }
+              );
+            } else if (sec > 0.5 && sec < 1) {
+              chrome.tts.speak(
+                "Your Internet is fast, and this webpage is not heavy.",
+                {
+                  lang: "en-US",
+                  rate: 1.0
+                }
+              );
+            } else {
+              chrome.tts.speak(
+                "Your Internet is fast and this webpage is super light!",
+                {
+                  lang: "en-US",
+                  rate: 1.0
+                }
+              );
+            }
+          }
+
+          chrome.storage.sync.set({ isClicked: true });
+        }, 2000);
       });
-
-      chrome.storage.sync.set({ isClicked: true });
-    });
-
-    // let loadTime = performance.getEntriesByType("navigation");
-    // let miliSec = loadTime[0].toJSON().duration;
-    // let sec = Number(miliSec) / 1000;
-    // const loadTimeKey = document.createElement("b");
-    // const loadTimeVal = document.createElement("p");
-    // loadTimeDOM.innerText = "";
-    // loadTimeKey.innerText = "Loading time: ";
-    // loadTimeVal.innerText = sec.toString() + "sec(s)";
-    // loadTimeDOM.appendChild(loadTimeKey);
-    // loadTimeDOM.appendChild(loadTimeVal);
-
-    // const sizeKey = document.createElement("b");
-    // const sizeVal = document.createElement("p");
-    // size.innerText = "";
-    // sizeKey.innerText = "Total page size: ";
-    // sizeVal.innerText =
-    //   (sec * Number(navigator.connection.downlink)) / 8 + "Byte(s)";
-    // size.appendChild(sizeKey);
-    // size.appendChild(sizeVal);
-
-    // chrome.tts.speak("Here is the result!", {
-    //   lang: "en-US",
-    //   rate: 1.5
-    // });
-
-    // chrome.storage.sync.set({ isClicked: true });
   });
 };
