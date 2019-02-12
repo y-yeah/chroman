@@ -103,7 +103,7 @@ check.onclick = async e => {
           if (Number(navigator.connection.downlink) <= 5) {
             if (sec > 1) {
               chrome.tts.speak(
-                "This webpage is heavy and your Internet is slow...",
+                "Man, this webpage is so heavy and your Internet is so slow...I can't believe how you have survived in the modern society.",
                 {
                   lang: "en-US",
                   rate: 1.0
@@ -111,7 +111,7 @@ check.onclick = async e => {
               );
             } else if (sec > 0.5 && sec < 1) {
               chrome.tts.speak(
-                "This webpage is not heavy, but your Internet is slow.",
+                "Well, this webpage is not heavy, but... your Internet is so slow, to be honest.",
                 {
                   lang: "en-US",
                   rate: 1.0
@@ -119,7 +119,7 @@ check.onclick = async e => {
               );
             } else {
               chrome.tts.speak(
-                "Thank God, your Internet is slow but this webpage is super light!",
+                "Thank God, your Internet is slow but this webpage is super light! You should definitely learn a lot from this webpage.",
                 {
                   lang: "en-US",
                   rate: 1.0
@@ -129,7 +129,7 @@ check.onclick = async e => {
           } else {
             if (sec > 1) {
               chrome.tts.speak(
-                "Your Internet is fast, but this webpage is heavy.",
+                "Your Internet is fast, but this webpage is heavy. Go back home and think about the solution.",
                 {
                   lang: "en-US",
                   rate: 1.0
@@ -137,7 +137,7 @@ check.onclick = async e => {
               );
             } else if (sec > 0.5 && sec < 1) {
               chrome.tts.speak(
-                "Your Internet is fast, and this webpage is not heavy.",
+                "Your Internet is fast, and this webpage is not heavy. I like your Internet.",
                 {
                   lang: "en-US",
                   rate: 1.0
@@ -145,7 +145,7 @@ check.onclick = async e => {
               );
             } else {
               chrome.tts.speak(
-                "Your Internet is fast and this webpage is super light!",
+                "Your Internet is fast and this webpage is super light! Save your time and do more push-ups.",
                 {
                   lang: "en-US",
                   rate: 1.0

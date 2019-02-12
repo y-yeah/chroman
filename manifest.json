@@ -1,5 +1,5 @@
 {
-  "name": "Loading Time Checker",
+  "name": "Chroman",
   "version": "1.0",
   "description": "Chrome Extention that calculates the loading time of a website",
   "permissions": [
@@ -16,7 +16,12 @@
   },
   "manifest_version": 2,
   "page_action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_title": "Chroman the Calculator",
+    "default_icon": {
+      "48": "./img/icon48.png",
+      "128": "./img/icon128.png"
+    }
   },
   "content_scripts": [
     {

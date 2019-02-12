@@ -1,23 +1,32 @@
 body {
   min-height: 250px;
   min-width: 500px;
+  background-color: black;
+  color: white;
 }
 #title {
   font-size: 30px;
   font-weight: bold;
   margin: 20px 0;
 }
+#titlePhoto {
+    max-width: 100px;
+}
 div,
-p,
-button {
+p {
   margin: 10px;
   font-size: 15px;
 }
 button {
   height: 45px;
   width: 75px;
+  margin: 10px;
   outline: none;
+  font-size: 15px;
 }
 #text {
   margin: 20px;
+}
+a {
+  color: white;
 }
