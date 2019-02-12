@@ -2,13 +2,27 @@
   "name": "Loading Time Checker",
   "version": "1.0",
   "description": "Chrome Extention that calculates the loading time of a website",
-  "permissions": ["storage", "declarativeContent", "tabs"],
+  "permissions": [
+    "storage",
+    "declarativeContent",
+    "tabs",
+    "tts",
+    "http://*/",
+    "https://*/"
+  ],
   "background": {
-    "scripts": ["./background.js"],
+    "scripts": ["background.js"],
     "persistent": false
   },
   "manifest_version": 2,
-  "browser_action": {
-    "default_popup": "index.html"
-  }
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": ["contentScript.js"]
 }
