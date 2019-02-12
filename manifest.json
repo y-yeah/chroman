@@ -2,13 +2,13 @@
   "name": "Chroman",
   "version": "1.0",
   "description": "Chroman tells you URL, total page size, connection speed, and the loading time of the webpage with a sexy voice message.",
-  "permissions": ["tabs", "tts", "http://*/", "https://*/"],
+  "permissions": ["tabs", "tts", "http://*/", "https://*/", "activeTab"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
   "manifest_version": 2,
-  "page_action": {
+  "browser_action": {
     "default_popup": "popup.html",
     "default_title": "Chroman the Calculator",
     "default_icon": {

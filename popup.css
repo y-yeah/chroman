@@ -4,6 +4,11 @@ body {
   background-color: black;
   color: white;
 }
+div,
+p {
+  margin: 10px;
+  font-size: 15px;
+}
 #title {
   font-size: 30px;
   font-weight: bold;
@@ -11,11 +16,6 @@ body {
 }
 #titlePhoto {
   max-width: 100px;
-}
-div,
-p {
-  margin: 10px;
-  font-size: 15px;
 }
 #text {
   margin: 20px;

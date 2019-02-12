@@ -47,14 +47,6 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
     efType.innerHTML = "";
   }
 
-  const conSpeedKey = document.createElement("b");
-  const conSpeedVal = document.createElement("p");
-  speed.innerText = "";
-  conSpeedKey.innerText = "Connection speed when you loaded this page: ";
-  conSpeedVal.innerText = navigator.connection.downlink + " Mbps";
-  speed.appendChild(conSpeedKey);
-  speed.appendChild(conSpeedVal);
-
   let start = Date.now();
   let end;
   fetch(tabs[0].url)
@@ -90,6 +82,14 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
       let sec = (end - start) / 1000;
 
       setTimeout(() => {
+        const conSpeedKey = document.createElement("b");
+        const conSpeedVal = document.createElement("p");
+        speed.innerText = "";
+        conSpeedKey.innerText = "Connection speed when you loaded this page: ";
+        conSpeedVal.innerText = navigator.connection.downlink + " Mbps";
+        speed.appendChild(conSpeedKey);
+        speed.appendChild(conSpeedVal);
+
         calculating.innerText = "";
         loadTimeDOM.innerText = "";
         const loadTimeKey = document.createElement("b");
@@ -108,56 +108,43 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
         size.appendChild(sizeKey);
         size.appendChild(sizeVal);
 
+        const eng = {
+          lang: "en-US",
+          rate: 1.0
+        };
+
         if (Number(navigator.connection.downlink) <= 5) {
           if (sec > 1) {
             chrome.tts.speak(
-              "Man, this webpage is so heavy and your Internet is so slow...I can't believe how you have survived in the modern society.",
-              {
-                lang: "en-US",
-                rate: 1.0
-              }
+              "Man, this webpage is so heavy and your Internet is so slow...I can't believe how you have survived in this modern society.",
+              eng
             );
           } else if (sec > 0.5 && sec < 1) {
             chrome.tts.speak(
-              "Well, this webpage is not heavy, but... your Internet is so slow, to be honest.",
-              {
-                lang: "en-US",
-                rate: 1.0
-              }
+              "Well, this webpage is not heavy, but... your Internet is so slow, to be honest. You should start marathon from today",
+              eng
             );
           } else {
             chrome.tts.speak(
-              "Thank God, your Internet is slow but this webpage is super light! You should definitely learn a lot from this webpage.",
-              {
-                lang: "en-US",
-                rate: 1.0
-              }
+              "Thank God, your Internet is slow but this webpage is super light! You should definitely learn a lot from this webpage. Good boy Mr.webpage.",
+              eng
             );
           }
         } else {
           if (sec > 1) {
             chrome.tts.speak(
-              "Your Internet is fast, but this webpage is heavy. Go back home and think about the solution.",
-              {
-                lang: "en-US",
-                rate: 1.0
-              }
+              "Your Internet is fast, but this webpage is heavy. I feel sorry for your Internet, dude.",
+              eng
             );
           } else if (sec > 0.5 && sec < 1) {
             chrome.tts.speak(
-              "Your Internet is fast, and this webpage is not heavy. I like your Internet.",
-              {
-                lang: "en-US",
-                rate: 1.0
-              }
+              "Your Internet is fast, and this webpage is not heavy. I like your Internet, because I hate weightlifting.",
+              eng
             );
           } else {
             chrome.tts.speak(
               "Your Internet is fast and this webpage is super light! Save your time and do more push-ups.",
-              {
-                lang: "en-US",
-                rate: 1.0
-              }
+              eng
             );
           }
         }

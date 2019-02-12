@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Chrome Extention that calculates the loading time of a website",
   "main": "background.js",
-  "repository": "https://github.com/y-yeah/page_load_time_chrome_extention.git",
-  "author": "Yuma Sumi <rbly.776324.yuma66krayt@gmail.com>",
+  "repository": "https://github.com/y-yeah/chroman.git",
+  "author": "Chroman <chroman.chrysalis@gmail.com>",
   "license": "UNLICENSED",
   "devDependencies": {
     "eslint": "^5.13.0",
