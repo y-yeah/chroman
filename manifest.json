@@ -1,7 +1,7 @@
 {
   "name": "Chroman",
   "version": "1.0",
-  "description": "Chroman tells you the URL, the total page size, the connection speed, and the loading time of the current webpage with a sexy voice message.",
+  "description": "Chroman tells you URL, total page size, connection speed, and the loading time of the webpage with a sexy voice message.",
   "permissions": ["tabs", "tts", "http://*/", "https://*/"],
   "background": {
     "scripts": ["background.js"],
