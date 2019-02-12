@@ -1,15 +1,8 @@
 {
   "name": "Chroman",
   "version": "1.0",
-  "description": "Chroman will display the URL, the network type, the approximate total size, the connection speed, and the loading time, of the current webpage. And it will give you advices based on those information. Make sure you turn on the sound! Currently you can use this extension only when URL of the current website starts with http or https.",
-  "permissions": [
-    "storage",
-    "declarativeContent",
-    "tabs",
-    "tts",
-    "http://*/",
-    "https://*/"
-  ],
+  "description": "Chroman tells you the URL, the total page size, the connection speed, and the loading time of the current webpage with a sexy voice message.",
+  "permissions": ["tabs", "tts", "http://*/", "https://*/"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false

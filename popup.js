@@ -8,13 +8,6 @@ let efType = document.getElementById("efType");
 let size = document.getElementById("size");
 let speed = document.getElementById("speed");
 let loadTimeDOM = document.getElementById("loadTime");
-
-chrome.storage.sync.get("color", data => {
-  check.style.backgroundColor = data.color;
-  check.setAttribute("value", data.color);
-});
-
-// check.onclick = async e => {
 const calculating = document.getElementById("calculating");
 calculating.innerText = "CALCULATING...";
 calculating.style.color = "red";
@@ -168,9 +161,6 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
             );
           }
         }
-
-        chrome.storage.sync.set({ isClicked: true });
       }, 2000);
     });
 });
-// };
