@@ -1,2 +1,2 @@
-# page_load_time_chrome_extention
-Chrome extension that tells you possible loading time before actually clicking a link (ON THE WAY)
+# CHROMAN
+Chroman tells you the URL, the total page size, the connection speed, and the loading time of the current webpage with a sexy voice message.
