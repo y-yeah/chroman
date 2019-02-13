@@ -64,7 +64,7 @@ The main future plans are:
 
 **⚠️As of 13 Feb 2019, this app is currently going through a compliance review at Chrome Web Store.**
 
-## 💡*Use this app on Google Chrome*
+## 💡*Use this app on the server*
 
 To use this app on Google Chrome, go to [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) and download this app.
 
@@ -103,7 +103,15 @@ Now Chromon's icon should be installed onto your toolbar!
 
 Chroman wants to improve himself **a lot more**. He needs your help!
 
-Coming soon...
+Follow the instructions [use this app locally](#3-setup) and you will get the original source on your computer.
+
+To contribute to this app, make sure you create a branch and **ALWAYS** make a pull request. **DO NOT EDIT THE MASTER!**
+
+`git checkout -b <branch_name>`
+
+If you want to push your edited files to your remote file, run the following:
+
+`git push <remote_name> <branch_name>`
 
 ---
 
