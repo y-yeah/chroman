@@ -3,12 +3,12 @@
     <h1 align="center" >Chroman</h1>
     <div align="center">
         <strong>Chrome Loading Time Checker</strong>
-    </div>
-    <div align="center">👻👻👻👻👻</div>
-    <div align="center">
         <sub>Built by 
             <a href="https://github.com/y-yeah">Yuma Sumi</a>
         </sub>
+    </div>
+    <div align="center">👻👻👻👻👻</div>
+    <div align="center">
         <p><strong>ver 1.0</strong> as of 13 Feb 2019</p>
         <div >
         Will be released soon at 
