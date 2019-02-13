@@ -17,12 +17,23 @@
         ***********************************************************************
         <p>This was created during my time as a student at <a href="https://codechrysalis.io">Code Chrysalis</a>.</p>
         Will be released soon at 
-        <a href="https://chrome.google.com/webstore/category/extensions">Chrome Web Store</a>
+        <a href="https://chrome.google.com/webstore/category/extensions">Chrome Web Store</a> 🎉🎉
         <br/>
         ***********************************************************************
     </div>
 </div>
 <br/>
-<div font-family="Times New Roman">
-Chroman tells you URL, the total page size, the connection speed, and the loading time of the current webpage with a sexy voice message...
+<div align="center">
+
+**Chroman** is the Chrome Extension Chroman that tells you URL, total page size, connection speed, and the loading time of the webpage with a sexy voice message.
+
+[About](#1-about)&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;[Features](#2-features)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Setup](#3-setup)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Contributions](#5-contributions)
+
+
 </div>
+
+---
+
+## 1. About
+
+Chroman 
