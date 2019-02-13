@@ -3,12 +3,10 @@
 </div>
     <h1 align="center" >Chroman</h1>
     <div align="center">
-        <div>
-            <strong>Chrome Loading Time Checker</strong>
-        </div>
-        <sub>Built by 
+        <h3>Chrome Loading Time Checker</h3>
+        <p>Built by 
             <a href="https://github.com/y-yeah">Yuma Sumi</a>
-        </sub>
+        </p>
     </div>
     <br />
     <div align="center">👻👻👻👻👻</div>
@@ -19,7 +17,7 @@
             ***************************************************
             <br/>
             Will be released soon at 
-            <a href="#">Chrome Web Store</a>
+            <a href="https://chrome.google.com/webstore/category/extensions">Chrome Web Store</a>
             <br/>
             ***************************************************
         </div>
