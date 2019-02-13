@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./img/chromanTileIconOrigin.png" align="center">
+    <img src="./img/chromanTileIconOrigin.png" align="center" width="100%">
 </div>
 <h1 align="center" >Chroman</h1>
 <div align="center">👻👻👻👻👻</div>
@@ -29,7 +29,6 @@
 
 [Overview](#1-overview)&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;[Architecture](#2-architecture)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Setup](#3-setup)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Contributions](#5-contributions)
 
-
 </div>
 
 ---
@@ -41,15 +40,15 @@ It is the simple website speed checker on Chrome.
 
 By clicking Chroman, you can check out the following information:
 
-  1. URL of the current tab
-  2. Connection type and Effective connection type of the current network (if defined)
-  3. Approximate total page size (except for asynchronous page rendering)
-  4. Connection speed when you loade that tab page
-  5. Loading time of the current tab
+1. URL of the current tab
+2. Connection type and Effective connection type of the current network (if defined)
+3. Approximate total page size (except for asynchronous page rendering)
+4. Connection speed when you loade that tab page
+5. Loading time of the current tab
 
 Besides, it will give you a sexy advice with sexy voice on your connection speed and the file size.
 
-**Attention**: If you are *not* on the tab whose URL starts with `http://` or `https://`, it might not work properly.
+**Attention**: If you are _not_ on the tab whose URL starts with `http://` or `https://`, it might not work properly.
 
 ## 2. Architecture
 
@@ -58,9 +57,10 @@ Chroman ver 1.0 has very simple architecture:
 <img src="" alt="chroman architecture">
 
 The main future plans are:
- - to improve the accuracy 
- - to extend its function to the Google search results
- - make its voice sexier
+
+- to improve the accuracy
+- to extend its function to the Google search results
+- make its voice sexier
 
 ## 3. Setup
 
@@ -79,6 +79,7 @@ To use this app locally, you have to create a Git branch.
 Create your own Git account on GitHub and **fork a master** from [Chroman](https://github.com/y-yeah/chroman).
 
 Copy the URL of your fork, and run the following code locally.
+
 ```
 cd <target_repo>
 git clone <url_of_your_fork>
@@ -87,7 +88,6 @@ git clone <url_of_your_fork>
 #### 2. Enable Google Extension on Google Chrome
 
 **⚠️This part is mainly cited from the official instructions on Google Chrome Extension. More info at [Google Chrome Developer page](https://developer.chrome.com/extensions/getstarted).**
-
 
 First and foremost, open Google Chrome.
 
@@ -104,8 +104,6 @@ Now Chromon's icon should be installed onto your toolbar!
 ## 4. Contributions
 
 Chroman wants to improve himself **a lot more**. He needs your help!
-
-
 
 ---
 
