@@ -5,16 +5,14 @@
     <div align="center">👻👻👻👻👻</div>
     <div align="center">
         <br/>
-        <br/>
-        <h3>Chrome Loading Time Checker</h3>
+        <h2>Chrome Loading Time Checker</h2>
         <p>Built by 
             <a href="https://github.com/y-yeah">Yuma Sumi</a>
         </p>
-        <br/>
+        <p><strong>ver 1.0</strong> as of 13 Feb 2019</p>
         <br/>
     </div>
     <div align="center">
-        <p><strong>ver 1.0</strong> as of 13 Feb 2019</p>
         <div >
             ***************************************************
             <p>This was created during my time as a student at Code Chrysalis.</p>
