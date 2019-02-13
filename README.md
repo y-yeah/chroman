@@ -33,7 +33,7 @@
 
 ---
 
-## 1. Overview
+# 1. Overview
 
 Chroman tells you URL, total page size, connection speed, and the loading time of the webpage with a sexy voice message.
 It is the simple website speed checker on Chrome.
@@ -48,7 +48,7 @@ By clicking Chroman, you can check out the following information:
 
 Besides, it will give you a sexy advice with sexy voice on your connection speed and the file size.
 
-## 2. Architecture
+# 2. Architecture
 
 Chroman ver 1.0 has very simple architecture:
 
@@ -60,17 +60,17 @@ The main future plans are:
 - to extend its function to the Google search results
 - make its voice sexier
 
-## 3. Setup
+# 3. Setup
 
 **⚠️As of 13 Feb 2019, this app is currently going through a compliance review at Chrome Web Store.**
 
-### 💡Use this app on Google Chrome
+## 💡*Use this app on Google Chrome*
 
 To use this app on Google Chrome, go to [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) and download this app.
 
-### 💡Use this app locally
+## 💡*Use this app locally*
 
-#### 1. Download the original source
+### 1. Download the original source
 
 To use this app locally, you have to create a Git branch.
 
@@ -83,7 +83,7 @@ cd <target_repo>
 git clone <url_of_your_fork>
 ```
 
-#### 2. Enable Google Extension on Google Chrome
+### 2. Enable Google Extension on Google Chrome
 
 **⚠️This part is mainly cited from the official instructions on Google Chrome Extension. More info at [Google Chrome Developer page](https://developer.chrome.com/extensions/getstarted).**
 
@@ -91,9 +91,9 @@ First and foremost, open Google Chrome.
 
 Open the Extension Management page by navigating to [chrome://extensions](chrome://extensions).
 
-Enable **Developer Mode** by clicking the toggle switch next to Developer mode.
+Enable Developer Mode by clicking the toggle switch next to Developer mode.
 
-Click the **LOAD UNPACKED** button and select the extension directory.
+Click the `LOAD UNPACKED` button and select the extension directory.
 
 <img src="https://developer.chrome.com/static/images/get_started/load_extension.png" alt="extension unpacked" width="80%">
 
@@ -102,6 +102,8 @@ Now Chromon's icon should be installed onto your toolbar!
 ## 4. Contributions
 
 Chroman wants to improve himself **a lot more**. He needs your help!
+
+Coming soon...
 
 ---
 
