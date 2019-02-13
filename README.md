@@ -48,8 +48,6 @@ By clicking Chroman, you can check out the following information:
 
 Besides, it will give you a sexy advice with sexy voice on your connection speed and the file size.
 
-**Attention**: If you are _not_ on the tab whose URL starts with `http://` or `https://`, it might not work properly.
-
 ## 2. Architecture
 
 Chroman ver 1.0 has very simple architecture:
@@ -66,11 +64,11 @@ The main future plans are:
 
 **⚠️As of 13 Feb 2019, this app is currently going through a compliance review at Chrome Web Store.**
 
-### Use this app on Google Chrome
+### 💡Use this app on Google Chrome
 
 To use this app on Google Chrome, go to [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) and download this app.
 
-### Use this app locally
+### 💡Use this app locally
 
 #### 1. Download the original source
 
