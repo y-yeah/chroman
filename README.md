@@ -5,7 +5,7 @@
     <div align="center">👻👻👻👻👻</div>
     <div align="center">
         <br/>
-        <h2>Chrome Loading Time Checker</h2>
+        <h3>Chrome Loading Time Checker</h3>
         <p>Built by 
             <a href="https://github.com/y-yeah">Yuma Sumi</a>
         </p>
@@ -14,12 +14,12 @@
     </div>
     <div align="center">
         <div >
-            ***************************************************
+            ***********************************************************************
             <p>This was created during my time as a student at Code Chrysalis.</p>
             Will be released soon at 
             <a href="https://chrome.google.com/webstore/category/extensions">Chrome Web Store</a>
             <br/>
-            ***************************************************
+            ***********************************************************************
         </div>
     </div>
     <br/>
