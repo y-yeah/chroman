@@ -16,8 +16,11 @@
     <div align="center">
         <p><strong>ver 1.0</strong> as of 13 Feb 2019</p>
         <div >
+        ***************************************************
+        <br/>
         Will be released soon at 
             <a href="#">Chrome Web Store</a>
+        ***************************************************
         </div>
     </div>
     <br/>
