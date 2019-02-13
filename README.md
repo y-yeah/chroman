@@ -13,6 +13,7 @@
         <p><strong>ver 1.0</strong> as of 13 Feb 2019</p>
         <div >
             ***************************************************
+            <p>This was created during my time as a student at Code Chrysalis.</p>
             <br/>
             Will be released soon at 
             <a href="https://chrome.google.com/webstore/category/extensions">Chrome Web Store</a>
