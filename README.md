@@ -2,7 +2,9 @@
     <img src="./img/chromanTileIconOrigin.png" align="center">
     <h1 align="center" >Chroman</h1>
     <div align="center">
-        <strong>Chrome Loading Time Checker</strong>
+        <div>
+            <strong>Chrome Loading Time Checker</strong>
+        </div>
         <sub>Built by 
             <a href="https://github.com/y-yeah">Yuma Sumi</a>
         </sub>
