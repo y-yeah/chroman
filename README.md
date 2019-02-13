@@ -9,7 +9,10 @@
             <a href="https://github.com/y-yeah">Yuma Sumi</a>
         </sub>
     </div>
+    <br />
     <div align="center">👻👻👻👻👻</div>
+    <br />
+    
     <div align="center">
         <p><strong>ver 1.0</strong> as of 13 Feb 2019</p>
         <div >
