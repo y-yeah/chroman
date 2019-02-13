@@ -62,13 +62,13 @@ The main future plans are:
 
 # 3. Setup
 
-**⚠️As of 13 Feb 2019, this app is currently going through a compliance review at Chrome Web Store.**
+***⚠️As of 13 Feb 2019, this app is currently going through a compliance review at Chrome Web Store.***
 
-## 💡*Use this app on the server*
+## 💡Use this app on the server
 
 To use this app on Google Chrome, go to [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) and download this app.
 
-## 💡*Use this app locally*
+## 💡Use this app locally
 
 ### 1. Download the original source
 
@@ -85,7 +85,7 @@ git clone <url_of_your_fork>
 
 ### 2. Enable Google Extension on Google Chrome
 
-**⚠️This part is mainly cited from the official instructions on Google Chrome Extension. More info at [Google Chrome Developer page](https://developer.chrome.com/extensions/getstarted).**
+***⚠️This part is mainly cited from the official instructions on Google Chrome Extension. More info at [Google Chrome Developer page](https://developer.chrome.com/extensions/getstarted).***
 
 First and foremost, open Google Chrome.
 
