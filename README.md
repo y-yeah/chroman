@@ -27,7 +27,7 @@
 
 **Chroman** is the Chrome Extension that tells you URL, total page size, connection speed, and the loading time of the webpage with a sexy voice message.
 
-[Overview](#1-overview)&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;[Architecture](#2-architecture)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Setup](#3-setup)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Contributions](#5-contributions)
+[Overview](#1-overview)&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;[Architecture](#2-architecture)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Setup](#3-setup)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Contributions](#4-contributions)
 
 </div>
 
@@ -52,7 +52,7 @@ Besides, it will give you a sexy advice with sexy voice on your connection speed
 
 Chroman ver 1.0 has very simple architecture:
 
-<img src="" alt="chroman architecture">
+<img src="./img/architecture.png" alt="chroman architecture">
 
 The main future plans are:
 
