@@ -16,8 +16,8 @@
     <div >
         ***********************************************************************
         <p>This was created during my time as a student at <a href="https://codechrysalis.io">Code Chrysalis</a>.</p>
-        Will be released soon at 
-        <a href="https://chrome.google.com/webstore/category/extensions">Chrome Web Store</a> 🎉🎉
+        It is now released at 
+        <a href="https://chrome.google.com/webstore/detail/chroman/maaokddlmmnipabobhmmoomlmaenpcjh?hl=en">Chrome Web Store</a> 🎉🎉
         <br/>
         ***********************************************************************
     </div>
